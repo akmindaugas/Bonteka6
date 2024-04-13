@@ -1,0 +1,32 @@
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "variables";
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-color: var($light-color);
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+// keep import down here, order!
+@import "header";
+
+main {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 2rem;
+}
