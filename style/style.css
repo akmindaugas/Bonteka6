@@ -9,6 +9,7 @@ body {
   justify-content: flex-start;
   box-sizing: border-box;
   background-color: #f0ece5;
+  max-width: 2000px;
   height: -moz-fit-content;
   height: fit-content;
   margin: auto;
@@ -122,7 +123,7 @@ body main .contact_img {
   text-align: center;
   background-position: center;
   background-size: cover;
-  width: 1200px;
+  max-width: 2000px;
   height: 500px;
 }
 body main .content .grid-container {
@@ -136,10 +137,10 @@ body main .content .grid-container {
   justify-items: center;
   align-items: center;
 }
-body main .content .grid-item {
+body main .content .grid-container .grid-item {
   display: flex;
 }
-body main .content .grid-item p {
+body main .content .grid-container .grid-item p {
   text-align: center;
   max-width: 100%;
   height: -moz-max-content;
@@ -153,11 +154,11 @@ body main .content .grid-item p {
   word-spacing: 10px;
   font-weight: 600;
 }
-body main .content .grid-item p .first-word {
+body main .content .grid-container .grid-item p .first-word {
   font-size: 2em;
   font-weight: bold;
 }
-body main .content .grid-item img {
+body main .content .grid-container .grid-item img {
   width: 90%;
   height: auto;
   -o-object-fit: cover;
@@ -165,25 +166,25 @@ body main .content .grid-item img {
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
 }
-body main .content #img_roads {
+body main .content .grid-container #img_roads {
   width: 100%;
   max-height: auto;
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
 }
-body main .content #img_ship_cargo_1 {
+body main .content .grid-container #img_ship_cargo_1 {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
 }
-body main .content #img_rail_cargo_1 {
+body main .content .grid-container #img_rail_cargo_1 {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
 }
-body main .content #img_office {
+body main .content .grid-container #img_office {
   max-width: 60%;
   max-height: auto;
   -o-object-fit: cover;
@@ -191,7 +192,7 @@ body main .content #img_office {
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
 }
-body main .content #img_truck_cargo_2 {
+body main .content .grid-container #img_truck_cargo_2 {
   width: 80%;
   max-height: auto;
   -o-object-fit: cover;
@@ -203,21 +204,13 @@ body main .content #img_truck_cargo_2 {
 body main .content .contact_wrapper {
   padding-bottom: 10rem;
 }
-body main #img_rail_cargo_2 {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.49);
-}
 
-@media screen and (max-width: 600px) {
-  body .grid-container {
+@media screen and (max-width: 950px) {
+  body main .content .grid-container {
     grid-auto-flow: column;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
-  body .grid-item img {
+  body main .content .grid-item img {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
