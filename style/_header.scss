@@ -1,9 +1,8 @@
-@import "variables";
+// @import "variables";
 
 header {
   box-sizing: border-box;
   display: flex;
-  // max-height: fit-content;
   background-color: #161a30;
   border-radius: 8px;
   color: #f0ece5;
@@ -14,7 +13,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -23,6 +21,7 @@ header {
     img {
       max-width: 200px;
       max-height: auto;
+      margin-left: 3rem;
     }
   }
   .nav {
@@ -30,11 +29,6 @@ header {
     li {
       display: inline-block;
       margin-right: 100px;
-
-      li:not(:last-child) {
-        margin-right: 0px;
-      }
-
       a {
         text-decoration: none;
         font-weight: 500;
@@ -50,6 +44,7 @@ header {
     }
   }
   .language_selector {
+    margin-right: 5rem;
     a {
       margin-right: 20px;
     }
@@ -91,6 +86,16 @@ header {
         border-radius: 2px;
         box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
       }
+    }
+  }
+  body {
+    .grid-container {
+      grid-auto-flow: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .grid-item img {
+      display: none;
     }
   }
 }
