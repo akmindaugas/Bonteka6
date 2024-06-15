@@ -1,4 +1,4 @@
-// Function to toggle language-specific content visibility
+
 function toggleLanguage(language) {
   if (language === "en") {
     document.getElementById("content-en").style.display = "block";
@@ -16,7 +16,7 @@ function toggleLanguage(language) {
     document.getElementById("content-ru").style.display = "block";
     localStorage.setItem("selectedLanguage", "ru");
   }
-  // Toggle navigation menu
+
   if (language === "en") {
     document.getElementById("navAboutId").innerHTML =
       '<a href="./index.html">About</a>';
@@ -52,13 +52,13 @@ function toggleLanguage(language) {
       '<a href="./contacts.html">Контакты</a>';
   }
 }
-// Function to initialize the selected language based on local storage
+
 function initLanguage() {
   const selectedLanguage = localStorage.getItem("selectedLanguage");
   if (selectedLanguage) {
     toggleLanguage(selectedLanguage);
   } else {
-    // Default to English if no language is selected
+
     toggleLanguage("en");
   }
 }

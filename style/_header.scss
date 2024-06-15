@@ -22,13 +22,15 @@ header {
       max-width: 200px;
       max-height: auto;
       margin-left: 3rem;
+ 
     }
   }
   .nav {
+    display: flex;
     list-style-type: none;
     li {
       display: inline-block;
-      margin-right: 100px;
+     
       a {
         text-decoration: none;
         font-weight: 500;
@@ -62,9 +64,12 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
     .logo {
       img {
@@ -73,8 +78,10 @@ header {
     }
     .nav {
       list-style-type: none;
+      margin: auto;
       li {
         display: inline-block;
+    justify-content: center;
       }
     }
     .language_selector {
@@ -88,7 +95,7 @@ header {
       }
     }
   }
-  body {
+  main {
     .grid-container {
       grid-auto-flow: column;
       grid-template-columns: 1fr;
